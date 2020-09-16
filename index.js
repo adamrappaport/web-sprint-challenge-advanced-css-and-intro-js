@@ -311,15 +311,17 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(arr){
 
   let newArr=[]
-  for(let i = 0; i < artists.length; i++){
- if (arr[i].paintings > 100)
- return newArr
+  for(let i = 0; i < arr.length; i++){
+ if (arr[i].paintings > 100){
+  newArr.push(arr[i].name)
+ }
+ 
   
 
 }
-
+return newArr
 }
-
+console.log(lotsOfArt(artists))
 // 🎨🎨 STRETCH 🎨🎨//
 
 
